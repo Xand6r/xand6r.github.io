@@ -76,3 +76,39 @@ ul.dropdown-content{
     margin-top: 4.5vw !important;
 }
 
+.flexbox{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.picture{
+    flex-basis: 60px;
+    margin: auto;
+}
+
+.text{
+    flex-basis: 600px;
+    margin: auto;
+}
+
+.bottom{
+    margin-top: 10px;
+    float: right;
+}
+.self-container{
+    width: 85vw;
+    margin: 10vh auto;
+}
+span.about{
+    margin-left: 10px;
+    font-family: custom2;
+    font-size: large;
+}
+@font-face{
+    font-family: custom2;
+    src: url("../fonts/BILLY\ ARGEL\ \ WHITE.jpeg");
+}
+
+#about{
+    animation: fade-in 2s ease-in forwards;
+}

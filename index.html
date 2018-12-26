@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
     <link rel="icon" href="./images/as-logo.png">
-    <title>S/A</title>
+    <title>A/S</title>
 </head>
 <body>
     <div id="app">
         <nav>
             <div class="nav-wrapper white">
+                
                 <ul class="left hide-on-small-only">
                     <li @click="setCurrent('about')"><a class="black-text" href="#!">about</a></li>
                     <li @click="setCurrent('projects')"><a  class="black-text" href="#!">projects</a></li>
@@ -56,8 +57,30 @@
             </div>
         </nav>
         <div>
-            <div class="container">
-
+            <div class="self-container" id="about" v-show="current=='about'">
+                <div class="flexbox">
+                    <div class="picture hide-on-med-and-down">
+                        <img class="circle" src="./images/Capture.PNG" alt="">
+                    </div>
+                    <div class="picture hide-on-large-only">
+                        <img src="./images/Capture.PNG" alt="">
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="text">
+                        <div class="card-panel">
+                            <i class="fa fa-3x fa-quote-left"></i><br>
+                            <span class="about">
+                                Hi, I'm shuaibu Alexander. I am a 400level student of the federal university of technology, I am currently studying computer engineering. describing myself in one word would be <b>"Obsessed"</b> as
+                                that is how i managed to acquire all the skills i listed. Once i start something there's no stopping me until i accomplish it totally.
+                                To go along this tenacity is my intelligence, I am confident in above every other thing my ability to read and learn, this combination makes sure i am placed within the top 5 students in my department with a current cgpa of {{cgpa}}, so be rest assured, if it can be learnt,i can learn it. 
+                                <br> i am introverted, but under any circumstances i can hold intelligent and consistent conversations.
+                                want to find out more about me? contact straight up!
+                            </span>
+                            <span class="bottom"><i class="fa fa-3x fa-quote-right"></i></span>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div v-show="current=='home'" class="container">
                 <div class="slider">
@@ -101,7 +124,7 @@
                             <img src="./images/pricing-x-bg-highlight.jpg" alt="pichure">
                             <div class="caption center-align">
                             
-                                <h5 class="flow-text">Check out my previous works by clicking <b>projects</b> , or find out more about me by clicking <b>about me</b>. Like what you see, contact me right now!.</h5>
+                                <h5 class="flow-text">Check out my previous works by clicking <b>projects</b> , or find out more about me by clicking <b>about</b>. Like what you see, contact me right now!.</h5>
                             </div>
                         </li>
                     </ul>

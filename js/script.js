@@ -5,7 +5,8 @@ $(function(){
 const app=new Vue({
     el:"#app",
     data:{
-        current:"home"
+        current:"about",
+        cgpa:4.66
     },
     methods: {
         setCurrent(str){
