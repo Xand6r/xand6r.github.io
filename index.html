@@ -3,12 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./images/favicon.ico">
-    <title>Alex-ander Shuaibu</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.min.css">
+    <title>S/A</title>
 </head>
 <body>
-    <p>gotch charles!!</p>
+    <div id="app">
+        <nav>
+            <div class="nav-wrapper white">
+                <ul class="left hide-on-small-only">
+                    <li @click="setCurrent('about')"><a class="black-text" href="#!">about</a></li>
+                    <li @click="setCurrent('projects')"><a  class="black-text" href="#!">projects</a></li>
+                </ul>
+                <a href="#!" @click="setCurrent('home')" class="brand-logo center"><img class="small-image pulse" src="./images/as-logo.png" alt=""></a>
+                <ul class="right hide-on-small-only">
+                    <li data-activates="dropdown-skills" class="dropdown-button"><a class="black-text" href="#!">skills</a></li>
+                    <li data-activates="dropdown-contact" class='dropdown-button'><a class="black-text" href="#!">contact</a></li>
+                </ul>
+
+                <ul class="dropdown-content collection" id="dropdown-skills">
+                    <li class="collection-item">
+                        <a href="#!" class="black-text">Fullstack Developer</a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="#!" class="black-text">Data Analyst</a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="#!" class="black-text">UI/UX designer</a>
+                    </li>
+                    <li class="collection-item">
+                        <a href="#!" class="black-text">AI engineer</a>
+                    </li>
+                </ul>
+                
+                <ul class="dropdown-content collection" id="dropdown-contact">
+                    <li  class="collection-item">
+                        <a class="black-text" target="_blank" href="https://twitter.com/xand6r"><i class="fa fa-twitter"></i>twitter</a> 
+                    </li>
+                    <li  class="collection-item">
+                        <a class="black-text" target="_blank" href="https://kaggle.com/xand9r"><i class="fa fa-krw"></i>kaggle</a> 
+                    </li>
+                    <li  class="collection-item">
+                        <a class="black-text" target="_blank" href="https://github.com/xand6r"><i class="fa fa-github"></i>github</a> 
+                    </li>
+                    <li  class="collection-item">
+                        <a class="black-text" target="_blank" href=""></i>+2349076299257</a> 
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <div v-show="current=='home'" class="container">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img class="small" src="./images/Capture.PNG" alt="pichure">
+                            <div class="caption right-align black-text">
+                                <h4 class="flow-text">HELLO!!</h4>
+                                <h6 class="light">My name is Shuaibu Alexander & welcome to my potforlio.</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="responsive-img" src="./images/frontend-developer.png" alt="pichure">
+                            <div class="caption center-align">
+                                <h4 class="flow-text">FRONT-END DEVELOPER</h4>
+                                <h6 class="light">I am a front-end developer who builds rich user-interfaces using Vue-js,JQuery and materialize-css.</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/backend.jpeg" alt="pichure">
+                            <div class="caption left-align">
+                                <h4 class="flow-text">BACK-END DEVELOPER!!</h4>
+                                <h6 class='light'>I write quality server-side script using node-js(express,mongoDB)and<br>  MYSQL-php with full understanding of deployment and maintainance of web-apps.</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/ui.jpeg" alt="pichure">
+                            <div class="caption center-align">
+                                <h4 class="flow-text"> UI designer</h4>
+                                <h6 class="light">i design quality rich websites as well as organize quality, as well as prototype apps which enrich user experience using figma.</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/ai.jpeg" alt="pichure">
+                            <div class="caption left-align">
+                                <h4 class="flow-text">Machine Learning and Data Science Enthusiast</h4>
+                                <h6 class="light">i create intelligent systems using tensorflow/python, which are capable of image recognition,conversational agents(chatbots) and text processing.</h6>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/pricing-x-bg-highlight.jpg" alt="pichure">
+                            <div class="caption center-align">
+                            
+                                <h5 class="flow-text">Check out my previous works by clicking <b>projects</b> , or find out more about me by clicking <b>about me</b>. Like what you see, contact me right now!.</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-<script src="./javascript/index.js"></script>
+<script src="./js/jquery-3.3.1.js"></script>
+<script src="./js/materialize.min.js"></script>
+<script src="./js/vue.js"></script>
+<script src="./js/script.js">
+</script>
 </html>

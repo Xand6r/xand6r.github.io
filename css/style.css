@@ -1,0 +1,78 @@
+.small-image{
+    animation: expand 1s ease-in forwards;
+}
+
+body{
+    background-image: url("../images/bg.jpg");
+}
+
+nav>div>ul>li{
+    font-family: custom;
+    width: 15vw !important;
+    text-align: center !important;
+    text-transform: capitalize;
+}
+
+nav>div>ul>li:first-child{
+    padding-left: 20px;
+}
+
+nav>div>ul>li:last-child{
+    padding-right: 20px;
+}
+
+nav>div>ul>li{
+    animation: fade-up 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+
+@font-face{
+    font-family: custom;
+    src: url("../fonts/RibeyeMarrow-Regular.ttf");
+}
+
+@keyframes expand{
+    from{
+        max-height: 0px;
+        max-width: 0px;
+        margin-top: 0px;
+    }
+    to{
+        margin-top:5px;
+        max-height:80px;
+        max-width: 80px;
+    }
+}
+
+@keyframes fade-up{
+    from{
+        margin-top: -50px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+.container{
+    margin-top: 10vh;
+    animation: fade-in 3s;
+}
+
+
+ul.dropdown-content{
+    font-family: custom;
+    min-width: 15vw !important;
+    margin-top: 4.5vw !important;
+}
+
