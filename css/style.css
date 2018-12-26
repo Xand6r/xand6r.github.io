@@ -112,3 +112,8 @@ span.about{
 #about{
     animation: fade-in 2s ease-in forwards;
 }
+
+a.bars{
+    margin-top: 15px;
+    margin-left: -10px;
+}
