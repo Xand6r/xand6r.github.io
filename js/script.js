@@ -1,5 +1,6 @@
 $(function(){
     $(".slider").slider();
+    $(".button-collapse").sideNav();
 })
 
 const app=new Vue({

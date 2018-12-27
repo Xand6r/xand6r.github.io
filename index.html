@@ -15,9 +15,6 @@
         <nav>
             <div class="nav-wrapper white">
                 
-                <ul class="hide-on-med-and-up left">
-                    <li><a href="#!" class="bars"><i class="black-text fa fa-2x fa-bars"></i></a></li>
-                </ul>
 
                 <ul class="left hide-on-small-only">
                     <li @click="setCurrent('about')"><a class="black-text" href="#!">about</a></li>
@@ -27,6 +24,17 @@
                 <ul class="right hide-on-small-only">
                     <li data-activates="dropdown-skills" class="dropdown-button"><a class="black-text" href="#!">skills</a></li>
                     <li data-activates="dropdown-contact" class='dropdown-button'><a class="black-text" href="#!">contact</a></li>
+                </ul>
+                
+                <ul class="hide-on-med-and-up left">
+                    <li class="button-collapse" data-activates="mobile-side"><a href="#!" class="bars"><i class="black-text fa fa-2x fa-bars"></i></a></li>
+                </ul>
+                    
+                <ul id="mobile-side" class="collection side-nav">
+                    <li class="collection-item"><a href="#!">lool</a></li>
+                    <li class="collection-item"><a href="#!">lool</a></li>
+                    <li class="collection-item"><a href="#!">lool</a></li>
+                    <li class="collection-item"><a href="#!">lool</a></li>
                 </ul>
 
                 <ul class="dropdown-content collection" id="dropdown-skills">
@@ -64,7 +72,7 @@
             <div class="self-container" id="about" v-show="current=='about'">
                 <div class="flexbox">
                     <div class="picture hide-on-med-and-down">
-                        <img class="responsive-img circle" src="./images/Capture.PNG" alt="">
+                        <img class="circle" src="./images/Capture.PNG" alt="">
                     </div>
                     <div class="picture hide-on-large-only">
                         <img src="./images/Capture.PNG" alt="">
