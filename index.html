@@ -12,6 +12,35 @@
 </head>
 <body>
     <div id="app">
+            <ul id="mobile-side" class="collapsible side-nav">
+                <div class="divider"></div>
+                <li @click="setCurrent('home')">
+                    <div class="collapsible-header"><i class="fa fa-home"></i>home</a><i class="material-icons"></i></div>
+                </li>
+                <div class="divider"></div>
+                <li @click="setCurrent('about')">
+                    <div class="collapsible-header"><i class="fa fa-user"></i>about</a><i class="material-icons"></i></div>
+                </li>
+                <div class="divider"></div>
+                <li @click="setCurrent('Projects')">
+                    <div class="collapsible-header"><i class="fa fa-star"></i>Projects</div>
+                </li>
+                <div class="divider"></div>
+                <li >
+                    <div class="collapsible-header"><i class="fa fa-suitcase"></i>skills</div>
+                    <div class="collapsible-body">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <div class="divider"></div>
+                <li>
+                    <div class="collapsible-header"><i class="fa fa-phone"></i>contact</div>
+                    <div class="collapsible-body">
+                        <span>Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </li>
+                <div class="divider"></div>
+            </ul>
         <nav>
             <div class="nav-wrapper white">
                 
@@ -30,12 +59,7 @@
                     <li class="button-collapse" data-activates="mobile-side"><a href="#!" class="bars"><i class="black-text fa fa-2x fa-bars"></i></a></li>
                 </ul>
                     
-                <ul id="mobile-side" class="collection side-nav">
-                    <li class="collection-item"><a href="#!">lool</a></li>
-                    <li class="collection-item"><a href="#!">lool</a></li>
-                    <li class="collection-item"><a href="#!">lool</a></li>
-                    <li class="collection-item"><a href="#!">lool</a></li>
-                </ul>
+
 
                 <ul class="dropdown-content collection" id="dropdown-skills">
                     <li class="collection-item">
@@ -68,14 +92,16 @@
                 </ul>
             </div>
         </nav>
+
+
         <div>
             <div class="self-container" id="about" v-show="current=='about'">
                 <div class="flexbox">
                     <div class="picture hide-on-med-and-down">
                         <img class="circle" src="./images/Capture.PNG" alt="">
                     </div>
-                    <div class="picture hide-on-large-only">
-                        <img src="./images/Capture.PNG" alt="">
+                    <div class=" hide-on-large-only">
+                        <img class="picture2" src="./images/Capture.PNG" alt="">
                     </div>
                     <div class="spacer"></div>
                     <div class="text">

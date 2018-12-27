@@ -84,9 +84,16 @@ ul.dropdown-content{
 .picture{
     flex-basis: 60px;
     margin: auto;
+    flex-shrink:1;
+}
+
+.picture2{
+    width: 85vw !important;
+    margin: auto;
 }
 
 .text{
+    flex-shrink: 1;
     flex-basis: 600px;
     margin: auto;
 }
@@ -116,4 +123,9 @@ span.about{
 a.bars{
     margin-top: 15px;
     margin-left: -10px;
+}
+
+ul#mobile-side{
+    font-family: custom2;
+    text-transform: capitalize;
 }
