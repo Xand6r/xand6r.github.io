@@ -145,6 +145,9 @@ iframe{
     flex-basis: 100%;
     height: 100px;
 }
+.spacing{
+    width: 3vh;
+}
 
 .title{
     font-family: custom !important;
