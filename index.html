@@ -15,11 +15,11 @@
             <ul id="mobile-side" class="collapsible side-nav">
                 <div class="divider"></div>
                 <li @click="setCurrent('home')">
-                    <div class="collapsible-header"><i class="fa fa-home"></i>home</a><i class="material-icons"></i></div>
+                    <div class="collapsible-header"><i class="fa fa-home"></i>Home</a><i class="material-icons"></i></div>
                 </li>
                 <div class="divider"></div>
                 <li @click="setCurrent('about')">
-                    <div class="collapsible-header"><i class="fa fa-user"></i>about</a><i class="material-icons"></i></div>
+                    <div class="collapsible-header"><i class="fa fa-user"></i>About</a><i class="material-icons"></i></div>
                 </li>
                 <div class="divider"></div>
                 <li @click="setCurrent('Projects')">
@@ -27,7 +27,7 @@
                 </li>
                 <div class="divider"></div>
                 <li >
-                    <div class="collapsible-header"><i class="fa fa-suitcase"></i>skills</div>
+                    <div class="collapsible-header"><i class="fa fa-suitcase"></i>Skills</div>
                     <div class="collapsible-body">
                         <ul class="collection">
                             <li class="collection-item">
@@ -119,7 +119,19 @@
             </div>
         </nav>
 
-
+        <div>
+            
+            <div class="container" id="projects" v-show="current=='projects'">
+                <div class="title white-text flow-text">
+                    UI/UX designs
+                </div>
+                <iframe style="border: none;;"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJRFWpcwxUa3O5TkZurbQjcvY%2Fnetflix-clone%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                <div class="spacer"></div>
+                <iframe style="border: none;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFLtavTT0vhpkr3gDBN0d655w%2Fbasic-portfolio%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+                <div class="spacer"></div>
+            </div>
+        </div>
+        
         <div>
             <div class="self-container" id="about" v-show="current=='about'">
                 <div class="flexbox">
