@@ -7,7 +7,7 @@ $(function(){
 const app=new Vue({
     el:"#app",
     data:{
-        current:"projects",
+        current:"home",
         cgpa:4.66
     },
     methods: {
