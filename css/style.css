@@ -137,7 +137,7 @@ div#projects{
 }
 
 iframe{
-    flex-basis:100%;
+    flex-basis:50%;
     margin: auto;
     height: 50vh;
 }
