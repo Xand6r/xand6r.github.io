@@ -157,3 +157,7 @@ iframe{
     margin-top: -5vh !important;
 
 }
+
+.circular{
+ border-radius: 500px;
+}
