@@ -90,6 +90,11 @@ ul.dropdown-content{
 .picture2{
     width: 85vw !important;
     margin: auto;
+    height: 400px !important;
+}
+
+.collapsible-header i.fa{
+    color: rgb(99, 47, 47);
 }
 
 .text{
@@ -133,6 +138,7 @@ ul#mobile-side{
 div#projects{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-left: 100vh auto;
 }
 
@@ -159,5 +165,27 @@ iframe{
 }
 
 .circular{
- border-radius: 500px;
+    border-radius: 150px;
+    height: 370px;
+    width: 340px;
+    box-shadow: 10px 10px 10px 10px rgba(75, 40, 40,0.2);
+    
+}
+
+#about{
+    overflow: hidden;
+}
+
+
+
+.special-color{
+    color: hsl(0, 0%, 6%);
+    font-size: 25px;
+
+}
+
+.small-card{
+    flex-basis:500px !important;
+    margin-left: 3vw !important;
+    margin-right: 3vw !important;
 }

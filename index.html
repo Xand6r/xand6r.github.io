@@ -73,6 +73,11 @@
                     </div>
                 </li>
                 <div class="divider"></div>
+                
+                <li>
+                    <div class="collapsible-header"><a target="_blank" href="https://drive.google.com/file/d/1kA-B6pk55ufIj4Qh5MDPY68TEpZ43C0d/view" style="margin-left:-15px;color: hsla(0, 0%, 0%, 0.9)"><i class="fa fa-archive"></i>Resume</a></div>
+                </li>
+                <div class="divider"></div>
             </ul>
         <nav>
             <div class="nav-wrapper white">
@@ -120,22 +125,41 @@
                         <a class="black-text" target="_blank" href="https://github.com/xand6r"><i class="fa fa-github"></i>github</a> 
                     </li>
                     <li  class="collection-item">
+                        <a class="black-text" target="_blank" href="https://drive.google.com/file/d/1kA-B6pk55ufIj4Qh5MDPY68TEpZ43C0d/view"><i class="fa fa-archive"></i>Resume</a> 
+                    </li>
+                    
+                    <li  class="collection-item">
                         <a class="black-text" target="_blank" href=""></i>+2349076299257</a> 
                     </li>
+                    <div class="divider"></div>
                 </ul>
             </div>
         </nav>
 
         <div>
             
-            <div class="container" id="projects" v-show="current=='projects'">
+            <div class="containers" id="projects" v-show="current=='projects'">
                 <div class="title white-text flow-text">
                     UI/UX designs
                 </div>
-                <iframe style="border: none;;"  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FJRFWpcwxUa3O5TkZurbQjcvY%2Fnetflix-clone%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-                <div class="spacer"></div>
-                <iframe style="border: none;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFLtavTT0vhpkr3gDBN0d655w%2Fbasic-portfolio%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-                <div class="spacer"></div>
+                
+                <li v-for="info,i in projectsInfo" class="small-card">
+                    <div class="card small">
+                        <div class="card-image">
+                            <img :src="info.picturePath" alt="">
+                        </div>
+                        <div class="card-content">
+                            <p>
+                                {{info.summary}}
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a target="_blank" :href="info.link" class="black-text">goto website <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                </li>
+                
+
             </div>
         </div>
         
@@ -143,11 +167,11 @@
             <div class="self-container" id="about" v-show="current=='about'">
                 <div class="flexbox">
                     <div class="picture hide-on-small-only">
-                        <img class="circular" src="./images/Capture.PNG" alt="">
+                        <img class="circular" src="./images/about.PNG" alt="">
                         <div class="spacing"></div>
                     </div>
                     <div class=" hide-on-med-and-up">
-                        <img class="picture2" src="./images/Capture.PNG" alt="">
+                        <img class="picture2" src="./images/about.PNG" alt="">
                         <div class="white divider"></div>
                     </div>
                     
@@ -155,10 +179,10 @@
                         <div class="card-panel">
                             <i class="fa fa-3x fa-quote-left"></i><br>
                             <span class="about">
-                                Hi, I'm shuaibu Alexander. I am a 400level student of the federal university of technology, I am currently studying computer engineering. describing myself in one word would be <b>"Obsessed"</b> as
-                                that is how i managed to acquire all the skills i listed. Once i start something there's no stopping me until i accomplish it totally.
+                                Hi, I'm shuaibu Alexander. I am a fourth-year student of the federal university of technology. I am currently studying computer engineering, describing myself in one word would be <b>"Obsessed"</b> as
+                                that is how I managed to acquire all the skills I listed. Once I start something there's no stoping me until I accomplish it totally.
                                 To go along this tenacity is my intelligence, I am confident in above every other thing my ability to read and learn, this combination makes sure i am placed within the top 5 students in my department with a current cgpa of {{cgpa}}, so be rest assured, if it can be learnt,i can learn it. 
-                                <br> i am introverted, but under any circumstances i can hold intelligent and consistent conversations.
+                                <br> i am introverted, but under any circumstances i can hold intelligent and consistent conversations.I enjoy reading, strolling listening to good music, Watching animes and above all Coding.
                                 want to find out more about me? contact straight up!
                             </span>
                             <span class="bottom"><i class="fa fa-3x fa-quote-right"></i></span>
@@ -172,9 +196,8 @@
                     <ul class="slides">
                         <li>
                             <img class="small" src="./images/Capture.PNG" alt="pichure">
-                            <div class="caption right-align black-text">
-                                <h4 class="flow-text">HELLO!!</h4>
-                                <h6 class="light">My name is Shuaibu Alexander & welcome to my potforlio.</h6>
+                            <div class="caption push right-align">
+                                <h4 class="flow-text special-color">HELLO!!</h4>
                             </div>
                         </li>
                         <li>
