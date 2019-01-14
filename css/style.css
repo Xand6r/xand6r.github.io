@@ -188,4 +188,18 @@ iframe{
     flex-basis:500px !important;
     margin-left: 3vw !important;
     margin-right: 3vw !important;
+    animation: turn-over 2s ease-in-out;
+}
+
+
+@keyframes turn-over{
+    from{
+        opacity: 0;
+        transform: scale(0.1) rotateX(90deg) rotateY(90deg) rotateZ(150deg)
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+
+    }
 }

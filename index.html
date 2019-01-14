@@ -136,13 +136,58 @@
             </div>
         </nav>
 
+        <div v-show="current=='home'" class="container">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img class="small" src="./images/Capture.PNG" alt="pichure">
+                        <div class="caption push right-align">
+                            <h4 class="flow-text special-color">HELLO!!</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img class="responsive-img" src="./images/frontend-developer.png" alt="pichure">
+                        <div class="caption center-align">
+                            <h4 class="flow-text">FRONT-END DEVELOPER</h4>
+                            <h6 class="light">I am a front-end developer who builds rich user-interfaces using Vue-js,JQuery and materialize-css.</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/backend.jpeg" alt="pichure">
+                        <div class="caption left-align">
+                            <h4 class="flow-text">BACK-END DEVELOPER!!</h4>
+                            <h6 class='light'>I write quality server-side script using node-js(express,mongoDB)and<br>  MYSQL-php with full understanding of deployment and maintainance of web-apps.</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/ui.jpeg" alt="pichure">
+                        <div class="caption center-align">
+                            <h4 class="flow-text"> UI designer</h4>
+                            <h6 class="light">i design quality rich websites as well as organize quality, as well as prototype apps which enrich user experience using figma.</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/ai.jpeg" alt="pichure">
+                        <div class="caption left-align">
+                            <h4 class="flow-text">Machine Learning and Data Science Enthusiast</h4>
+                            <h6 class="light">i create intelligent systems using tensorflow/python, which are capable of image recognition,conversational agents(chatbots) and text processing.</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/pricing-x-bg-highlight.jpg" alt="pichure">
+                        <div class="caption center-align">
+                        
+                            <h5 class="flow-text">Check out my previous works by clicking <b>projects</b> , or find out more about me by clicking <b>about</b>. Like what you see, contact me right now!.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div>
             
             <div class="containers" id="projects" v-show="current=='projects'">
-                <div class="title white-text flow-text">
-                    UI/UX designs
-                </div>
-                
+
                 <li v-for="info,i in projectsInfo" class="small-card">
                     <div class="card small">
                         <div class="card-image">
@@ -191,53 +236,7 @@
                     </div>
                 </div>
             </div>
-            <div v-show="current=='home'" class="container">
-                <div class="slider">
-                    <ul class="slides">
-                        <li>
-                            <img class="small" src="./images/Capture.PNG" alt="pichure">
-                            <div class="caption push right-align">
-                                <h4 class="flow-text special-color">HELLO!!</h4>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="responsive-img" src="./images/frontend-developer.png" alt="pichure">
-                            <div class="caption center-align">
-                                <h4 class="flow-text">FRONT-END DEVELOPER</h4>
-                                <h6 class="light">I am a front-end developer who builds rich user-interfaces using Vue-js,JQuery and materialize-css.</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./images/backend.jpeg" alt="pichure">
-                            <div class="caption left-align">
-                                <h4 class="flow-text">BACK-END DEVELOPER!!</h4>
-                                <h6 class='light'>I write quality server-side script using node-js(express,mongoDB)and<br>  MYSQL-php with full understanding of deployment and maintainance of web-apps.</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./images/ui.jpeg" alt="pichure">
-                            <div class="caption center-align">
-                                <h4 class="flow-text"> UI designer</h4>
-                                <h6 class="light">i design quality rich websites as well as organize quality, as well as prototype apps which enrich user experience using figma.</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./images/ai.jpeg" alt="pichure">
-                            <div class="caption left-align">
-                                <h4 class="flow-text">Machine Learning and Data Science Enthusiast</h4>
-                                <h6 class="light">i create intelligent systems using tensorflow/python, which are capable of image recognition,conversational agents(chatbots) and text processing.</h6>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="./images/pricing-x-bg-highlight.jpg" alt="pichure">
-                            <div class="caption center-align">
-                            
-                                <h5 class="flow-text">Check out my previous works by clicking <b>projects</b> , or find out more about me by clicking <b>about</b>. Like what you see, contact me right now!.</h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            
         </div>
     </div>
 </body>
