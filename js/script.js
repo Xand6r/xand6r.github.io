@@ -16,9 +16,9 @@ const app=new Vue({
                 link:"https://xand6r.neocities.org"
             },
             {
-                picturePath:"./images/Project2.PNG",
+                picturePath:"./images/project2.PNG",
                 summary:"A Thrilling game of tic-tac-toe against an AI. Implemented using Vue.js. If you win 10 times in a row do not hire me!",
-                link:"https://hexano.epizy.com"
+                link:"https://hexano.000webhostapp.com/"
             }
         ]
     },
