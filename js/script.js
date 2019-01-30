@@ -23,7 +23,7 @@ const app=new Vue({
             {
                 picturePath:"./images/project3.PNG",
                 summary:"A design of a website for a make-up artist",
-                link:"https://hexano.herokuapp.com/"
+                link:"https://hexano.000webhostapp.com"
             },
             {
                 picturePath:"./images/project4.PNG",
