@@ -21,7 +21,7 @@ const app=new Vue({
                 link:"https://hexano.herokuapp.com/"
             },
             {
-                picturePath:"./images/project3.PNG",
+                picturePath:"./images/project4.PNG",
                 summary:"An anti-social network, post whatever you like. no one cares to look. using PHP & MYSQL",
                 link:"https://professoralex88.000webhostapp.com"
             }
