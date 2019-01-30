@@ -186,6 +186,7 @@ iframe{
 
 .small-card{
     flex-basis:500px !important;
+    /* min-height: 750px !important; */
     margin-left: 3vw !important;
     margin-right: 3vw !important;
     animation: turn-over 2s ease-in-out;

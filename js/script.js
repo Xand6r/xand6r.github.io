@@ -17,8 +17,13 @@ const app=new Vue({
             },
             {
                 picturePath:"./images/project2.PNG",
-                summary:"A Thrilling game of tic-tac-toe against an AI. Implemented using Vue.js. If you win 10 times in a row do not hire me!",
-                link:"https://hexano.000webhostapp.com/"
+                summary:"An offline Thrilling game of tic-tac-toe against an AI or against your friends online. Implemented using Vue.js and service workers.I dare you to win 10times!",
+                link:"https://hexano.herokuapp.com/"
+            },
+            {
+                picturePath:"./images/project3.PNG",
+                summary:"An anti-social network, post whatever you like. no one cares to look. using PHP & MYSQL",
+                link:"https://professoralex88.000webhostapp.com"
             }
         ]
     },
