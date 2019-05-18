@@ -79,6 +79,7 @@ ul.dropdown-content{
 .flexbox{
     display:flex;
     flex-wrap: wrap;
+
 }
 
 .picture{
@@ -138,6 +139,7 @@ ul#mobile-side{
 div#projects{
     display: flex;
     flex-wrap: wrap;
+    flex-direction:row-reverse;
     justify-content: center;
     margin-left: 100vh auto;
 }
