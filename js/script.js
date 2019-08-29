@@ -11,8 +11,12 @@ const app=new Vue({
         cgpa:4.66,
         projectsInfo:[
             {
+                picturePath:"./images/project8.PNG",
+                summary:"A data visualisation Platform  to use web made using google charts API for visualisation and Pattern Observation in data.",
+                link:"https://datavizual.herokuapp.com/"
+            },
+            {
                 picturePath:"./images/project7.PNG",
-                
                 summary:"A Fully-functional platform that displays books available in a library and their information, it also allows requesting of books online,implemented using M.E.V.N stack",
                 link:"https://book-retrieval.herokuapp.com/"
             },
